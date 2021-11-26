@@ -131,6 +131,7 @@ a {
 }
 
 .collab-main {
+	width: 100vw;
     height: calc(100vh - 80px);
     display: flex;
     align-items: center;
@@ -138,12 +139,11 @@ a {
 }
 
 .collab-info-container {
-    width: 20%;
     height: 100%;
     background: var(--dark-color-b);
 	color: #fff;
-	padding: 20px 20px 60px;
 	overflow-y: scroll;
+	transition: all 500ms;
 }
 
 .collab-info-container h2 {
@@ -167,8 +167,11 @@ a {
 }
 
 .collab-editor-container {
-    width: 50%;
     height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 500ms;
 }
 
 .collab-editor-container #editor {
@@ -178,10 +181,10 @@ a {
 }
 
 .collab-chat-container {
-    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
+	transition: all 500ms;
 }
 
 .chat-messages {
@@ -231,4 +234,7 @@ a {
 
 .chat-form-container .btn {
 	border-radius: 50%;
+}
+
+@media (max-width: 700px) {
 }
